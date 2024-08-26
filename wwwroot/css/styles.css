@@ -78,7 +78,7 @@ header ul li {
 .carousel-control-next-icon::after {
   content: '';
   display: block;
-  width: 10px; /* Ok boyutunu ayarlayın */
+  width: 10px;
   height: 10px;
   border: solid #00c26d;
   border-width: 0 3px 3px 0;
@@ -98,8 +98,8 @@ header ul li {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  width: 50px; /* Buton genişliğini ayarlayın */
-  height: 100px; /* Buton yüksekliğini ayarlayın */
+  width: 50px; 
+  height: 100px;
 }
 
 .carousel-control-prev {
@@ -137,4 +137,66 @@ header ul li {
     position: absolute;
     top: 105px;
     right: 285px;
+}
+
+.mini-carousel-container {
+    background-color: #f0f0f0;
+}
+.mini-carousel {
+    width: 1300px;
+    height: 100px;
+    overflow: hidden;
+    margin: auto;
+    padding: auto;
+}
+.container-event {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.event-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid gainsboro;
+    border-radius: 5px;
+    margin: 10px;
+}
+.event-card:hover {
+    border: 1px solid black;
+}
+.event-cards {
+    display: flex;
+    justify-content: space-around;
+}
+.card-footer {
+   display: flex;
+   justify-content: space-between;
+}
+.btn-event {
+    background-color: #00c26d;
+    border: none;
+    padding: 5px 50px;
+    font-weight: 500;
+}
+.btn-event:hover{
+    background-color: #02D076;
+}
+.all-event-btn {
+    background-color: #00c26d;
+    border: none;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 10px 20px;
+}
+.all-event-btn:hover{
+    background-color:#02D076
+}
+.span-tag{
+    font-size: 13px;
+    border: 1px solid black;
+    background-color: #f0f0f0;
+    padding: 3px 10px;
 }
