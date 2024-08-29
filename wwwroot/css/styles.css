@@ -139,10 +139,23 @@ header ul li {
     right: 285px;
 }
 
-.mini-carousel-container {
+.slider {
     background-color: #f0f0f0;
+    height: 100px;
 }
-
+.container-slider {
+    position: relative;
+    display: flex;  
+}
+.sliderImg {
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    transition: transform 0.5s ease-in-out;
+}
+.container-slider img {
+    width: 100%;
+}
 .events {
     background-color: #f6f6f6;
 }
