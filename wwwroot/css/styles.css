@@ -142,13 +142,7 @@ header ul li {
 .mini-carousel-container {
     background-color: #f0f0f0;
 }
-.mini-carousel {
-    width: 1300px;
-    height: 100px;
-    overflow: hidden;
-    margin: auto;
-    padding: auto;
-}
+
 .events {
     background-color: #f6f6f6;
 }
@@ -227,34 +221,54 @@ header ul li {
     color: #f0f0f0;
 }
 .contact-wrapper {
-    position: relative;
-    width: 100%;
-    margin: auto;
-    padding: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  .input-container {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    overflow: hidden;
   }
   .contact-input {
-    width: 50%;
-    height: 50px;
-    padding-left: 40px;
-    padding-right: 80px;
-    border-radius: 5px;
+    flex: 1;
+    padding: 10px;
+    border: none;
+    outline: none;
   }
   .contact-input::placeholder{
-    color: gray;
+    color: #999999;
+    font-weight: 400;
   }
   .contact-wrapper i {
-    position: absolute;
-    text-align: center;
-    font-size: 20px;
-    color: gray;
+    padding: 10px;
+    color: #555;
+    background-color: #f0f0f0;
   }
 .btn-submit {
-    position: absolute;
+    padding: 10px 20px;
     background-color: #00c26d;
+    color: #fff;
     border: none;
-    border-radius: 5px;
-    font-weight: 500;
-    color:#f0f0f0;
-    padding: 10px 30px;
+    cursor: pointer;
     
+}
+footer h6{
+    color: #999999;
+}
+footer li {
+    font-weight: 500;
+}
+footer li:hover {
+    text-decoration: underline;
+}
+.social-media-icons i{
+    border: 1px solid gainsboro;
+    border-radius: 50%;
+    padding: 6px;
+    margin-left: 5px; 
 }
