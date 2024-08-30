@@ -2,6 +2,9 @@
     font-size: 14px;
     font-family: "Roboto", sans-serif;
 }
+body {
+    background-color: #f0f0f0;
+}
 
 header {
     background-color: #F8F9FA;
@@ -126,38 +129,38 @@ header ul li {
     background-color: #00c26d;
     opacity: 1;
 }
-.frame-img-left {
-    position: absolute;
-    top: 115px;
-    left: 298px;
-    
-}
-
-.frame-img-right {
-    position: absolute;
-    top: 105px;
-    right: 285px;
-}
-
-.slider {
+.slider-container {
     background-color: #f0f0f0;
     height: 100px;
+    max-width: 1032px;
+    overflow: hidden;
 }
-.slider-inner {
-    position: relative;
-    display: flex;  
-    text-align: center;
+.slider {
+    display: flex;
+    transition: transform 0.8s ease-in-out;
 }
-.slider-prev {
+.slider img {
+    width: 100%;
+}
+.prev, .next {
     position: absolute;
-    top: 74%;
-    left: 16%;
+    top: 75%;
+    transform: translateY(-50%);
+    background-color: rgba(255,255,255,0.5);
+    color: #00c26d;
+    border: 1px solid gainsboro;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 24px;
+    border-radius: 50%;
 }
-.slider-next {
-    position: absolute;
-    top: 74%;
-    right: 16%;
+.prev {
+    left: 300px;
 }
+.next {
+    right: 300px;
+}
+
 .events {
     background-color: #f6f6f6;
 }
