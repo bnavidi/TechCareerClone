@@ -143,18 +143,20 @@ header ul li {
     background-color: #f0f0f0;
     height: 100px;
 }
-.container-slider {
+.slider-inner {
     position: relative;
     display: flex;  
+    text-align: center;
 }
-.sliderImg {
-    position: relative;
-    display: flex;
-    overflow: hidden;
-    transition: transform 0.5s ease-in-out;
+.slider-prev {
+    position: absolute;
+    top: 74%;
+    left: 16%;
 }
-.container-slider img {
-    width: 100%;
+.slider-next {
+    position: absolute;
+    top: 74%;
+    right: 16%;
 }
 .events {
     background-color: #f6f6f6;
@@ -285,3 +287,48 @@ footer li:hover {
     padding: 6px;
     margin-left: 5px; 
 }
+
+.breadcrumb-item+.breadcrumb-item::before {
+    color: white; 
+}
+.container-events-banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pagination .page-link {
+    width: 40px; 
+    height: 40px; 
+    border-color: #808080; 
+    border-radius: 5px;
+    color: black; 
+    font-size: 16px; 
+    text-align: center;
+}
+.pagination .page-link:hover, 
+.pagination .page-link:focus {
+    border-color: #00c26d;
+    background-color: #808080; 
+    color: black; 
+}
+.pagination .page-item.active .page-link {
+    background-color: #808080;
+    border-color: #808080;
+    color: white;
+}
+.pagination .page-item {
+    margin: 0 5px;
+}
+.quote-banner {
+    height: 200px;
+    background-color: #00c26d;
+}
+.container-quote {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+

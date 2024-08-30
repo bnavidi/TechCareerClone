@@ -32,7 +32,7 @@
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex justify-content-space-center align-items-center">
                                 <li class="nav-item me-3">
-                                    <a class="nav-link" aria-current="page" href="#events">Etkinlikler</a>
+                                    <a class="nav-link" aria-current="page" href="#">Etkinlikler</a>
                                 </li>
                                 <li class="nav-item me-3">
                                     <a class="nav-link" href="#">İş İlanları</a>
@@ -96,27 +96,41 @@
                 <div class="carousel-line"></div>
             </div>
         </div>
-        <div class="slider"> 
-            <div id="sliderIndicator" class="container container-slider">
-                <div class="sliderImg">
-                    <img src="wwwroot/images/slide-mini1.webp" alt="">
-                    <img src="wwwroot/images/slide-mini2.webp" alt="">
-                    <img src="wwwroot/images/slide-mini3.webp" alt="">
-                    <img src="wwwroot/images/slide-mini4.webp" alt="">
-                    <img src="wwwroot/images/slide-mini5.webp" alt="">
-                    <img src="wwwroot/images/slide-mini6.webp" alt="">
-                    <img src="wwwroot/images/slide-mini7.webp" alt="">
-                    <img src="wwwroot/images/slide-mini8.webp" alt="">
-                    <img src="wwwroot/images/slide-mini9.webp" alt="">
-                </div>   
-                <button id="sliderPrev" class="carousel-control-prev" type="button">
-                    <span id="sliderPrevIcon" class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <div class="slider">
+            <div class="container">
+                <div id="sliderMini" class="carousel slide">
+                    <div class="slider-inner">
+                      <div class="carousel-item active ">
+                        <div class="col-12 row">
+                          <img class="col-2" src="wwwroot/images/slide-mini1.webp" alt="">
+                          <img class="col-2" src="wwwroot/images/slide-mini2.webp" alt="">
+                          <img class="col-2" src="wwwroot/images/slide-mini3.webp" alt="">
+                          <img class="col-2" src="wwwroot/images/slide-mini4.webp" alt="">
+                          <img class="col-2" src="wwwroot/images/slide-mini5.webp" alt="">
+                          <img class="col-2" src="wwwroot/images/slide-mini6.webp" alt="">
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="col-12 row">
+                            <img class="col-2" src="wwwroot/images/slide-mini7.webp" alt="">
+                            <img class="col-2" src="wwwroot/images/slide-mini8.webp" alt="">
+                            <img class="col-2" src="wwwroot/images/slide-mini9.webp" alt="">
+                            <img class="col-2" src="wwwroot/images/slide-mini10.webp" alt="">
+                            <img class="col-2" src="wwwroot/images/slide-mini11.webp" alt="">
+                            <img class="col-2" src="wwwroot/images/slide-mini12.webp" alt="">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev slider-prev" type="button" data-bs-target="#sliderMini" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
-                </button>
-                <button id="sliderNext" class="carousel-control-next crs-btn" type="button" >
-                    <span id="sliderNextIcon" class="carousel-control-next-icon" aria-hidden="true"></span>
+                  </button>
+                  <button class="carousel-control-next slider-next" type="button" data-bs-target="#sliderMini" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
-                </button>  
+                  </button>
+                </div>
             </div>        
         </div>
         <div class="events pt-5 pb-5">
@@ -190,7 +204,7 @@
                     </div>
                     </div>
                 </div>
-                <button class="btn btn-success mt-4 all-event-btn">Tüm Etkinlikleri Gör</button>
+                    <button class="btn btn-success mt-4 all-event-btn" onclick="window.location.href='events.html';">Tüm Etkinlikleri Gör</button>
             </div>
         </div> 
         <div class="why-tech pt-2">
@@ -229,11 +243,34 @@
         <div class="comments pt-5 pb-5">
             <div class="container container-comments pt-2">
                 <h1>Bizi Katılımcılarımızdan Dinle</h1>
-                <div class="carousel-comments" style="height: 300px;"></div>
-                <div class="text-center pt-2">
-                    <button class="btn btn-success all-event-btn">Tüm Yorumları Gör</button>
+                <div id="commentsSlider" class="carousel slide mt-5">
+                    <div class="comments-inner pb-5 mb-5">
+                      <div class="carousel-item active">
+                         <div class="col-12 row">
+                              <img class="col-6" src="wwwroot/images/comments-slide-1.png" alt="">
+                              <img class="col-6" src="wwwroot/images/comments-slide-2.png" alt="">
+                         </div>
+                      </div>
+                      <div class="carousel-item">
+                         <div class="col-12 row">
+                              <img class="col-6" src="wwwroot/images/comments-slide-3.png" alt="">
+                              <img class="col-6" src="wwwroot/images/comments-slide-4.png" alt="">
+                         </div>
+                       </div>
+                    </div>
                 </div>
             </div>
+                  <button class="carousel-control-prev comments-prev" type="button" data-bs-target="#commentsSlider" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next comments-next" type="button" data-bs-target="#commentsSlider" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                  <div class="text-center pt-5">
+                    <button class="btn btn-success all-event-btn">Tüm Yorumları Gör</button>
+                  </div>
         </div>
         <div class="events-bar pt-5 pb-5">
             <div class="container container-events-bar d-flex">
