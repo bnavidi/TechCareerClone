@@ -331,4 +331,12 @@ footer li:hover {
     align-items: center;
     color: white;
 }
-
+.accordion-button {
+    height: 80px;
+    color: #000;
+    border: 1px solid gainsboro;
+}
+.accordion-button:not(.collapsed) {
+    background-color: white;
+    color: #000;
+}
