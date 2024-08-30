@@ -144,7 +144,7 @@ header ul li {
 }
 .prev, .next {
     position: absolute;
-    top: 75%;
+    top: 73%;
     transform: translateY(-50%);
     background-color: rgba(255,255,255,0.5);
     color: #00c26d;
