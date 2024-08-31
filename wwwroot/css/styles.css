@@ -346,3 +346,47 @@ footer li:hover {
     background-color: white;
     color: #000;
 }
+
+@media (max-width: 900px) {
+    .event-cards, .container-why-tech div, .container-events-bar {
+        flex-direction: column;
+        align-items: center;
+    }
+    .event-card, .why-tech-card, .events-bar-card {
+        width: 100%;
+    }
+    
+}
+@media (max-width: 1800px) {
+    .prev {
+        left: 300px;
+    }
+    .next {
+        right: 300px;
+    }
+
+}
+@media (max-width: 1500px) {
+    .prev {
+        left: 200px;
+    }
+    .next {
+        right: 200px;
+    }
+}
+@media (max-width: 1200px) {
+    .prev {
+        left: 100px;
+    }
+    .next {
+        right: 100px;
+    }
+}
+@media (max-width: 900px) {
+    .prev {
+        left: 1px;
+    }
+    .next {
+        right: 30px;
+    }
+}
